@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #333;
+}
+
+header {
+  background: #0A5959;
+  color: #fff;
+  text-align: center;
+  padding-top: 64px;
+}
+
+header h1,
+header p {
+  margin: 0;
+}
+
+header img {
+  width: 280px;
+  vertical-align: bottom;
+}
+
+.btn {
+  text-decoration: none;
+  background: #fff;
+  color: #0A5959;
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  padding: 0 10px;
+  margin: 40px auto 40px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 4px 4px 7px rgb(37, 37, 37);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.details > h1 {
+  text-align: center;
+  padding: 64px 0;
+  font-weight: normal;
+}
+
+.details .container {
+  margin: 0 32px;
+
+}
+
+.details img {
+  width: 100%;
+  height: 100%;
+}
+
+.details p {
+  line-height: 1.8;
+}
+
+.details section {
+  padding-bottom: 64px;
+}
+
+.members {
+  background: #e0e0e0;
+}
+
+.members > h1 {
+  text-align: center;
+  padding: 64px 0;
+  font-weight: normal;
+}
+
+.members ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.members img {
+  width: 160px;
+  border-radius: 50%;
+  border-width: 8px;
+  border-style: solid;
+  border-color: white;
+}
+
+.members h2 {
+  font-size: 20px;
+}
+
+.members li {
+  padding-bottom: 64px;
+}
+
+.call-to-action {
+  background: #0A5959;
+  color: #fff;
+  text-align: center;
+  padding: 64px 0;
+}
+
+.call-to-action h1 {
+  font-weight: normal;
+}
+
+.call-to-action .btn {
+  margin: 0 auto;
+  box-shadow: 4px 4px 7px rgb(37, 37, 37);
+}
+
+footer {
+  padding: 64px;
+  background: #F2CAA7;
+  color: #535257;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  header .container {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  header .info {
+    width: 60%;
+    align-self: center;
+  }
+
+  header .pic {
+    width: 40%;
+  }
+
+  .details .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .details section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .details .pic {
+    width: 50%;
+  }
+
+  .details .info {
+    width: calc(50% - 32px);
+  }
+
+  .members ul {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .members li {
+    width: 250px;
+  }
+}
